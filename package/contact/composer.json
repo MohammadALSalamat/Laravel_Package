@@ -1,0 +1,24 @@
+{
+    "name": "bitfumes/contact",
+    "description": "This is a query that will send a message to admins then save it to dadtabase",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "MohammadALSalamat",
+        "email": "alomda.alslmat@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bitfumes\\contact\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bitfumes\\contact\\ContactServiceProvider"
+            ]
+        }
+    }
+}
