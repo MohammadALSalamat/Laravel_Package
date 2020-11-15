@@ -26,7 +26,11 @@ class ContactServiceProvider extends ServiceProvider
 
         // puplish the config
         $this->publishes([
+            // publish the email so the user can change it
             __DIR__ . '/config/contact.php' => config_path('contact.php'),
+
+            // publish the view contact page so the user acan change it
+            __DIR__ . '/views' => resource_path('views/vendor/contact')
         ]);
 
         // to publish we have to run php artisan vendor publish to see what we can publish
